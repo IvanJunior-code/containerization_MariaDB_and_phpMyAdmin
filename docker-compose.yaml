@@ -20,7 +20,7 @@ services:
     volumes:
       - volume-mariadb:/var/lib/mysql
     environment:
-      MARIADB_ROOT_PASSWORD: toor
+      MARIADB_ROOT_PASSWORD: ${ROOT_PWD}
   phpmyadmin:
     container_name: phpmyadmin
     image: phpmyadmin:5
